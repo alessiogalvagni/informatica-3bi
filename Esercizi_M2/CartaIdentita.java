@@ -1,3 +1,6 @@
+package Esercizi_M2;
+
+
 public class CartaIdentita {
     public static void main(String[] args) throws Exception {
     
@@ -28,5 +31,6 @@ public class CartaIdentita {
     boolean corsoinformatica;
     corsoinformatica = true;
     System.out.println("Corso di informatica: " + corsoinformatica);
+    
     }
 }
