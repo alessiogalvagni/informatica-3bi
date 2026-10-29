@@ -1,19 +1,19 @@
 public class MisureAula {
     public static void main(String[] args) throws Exception {
 
-        double lunghezza = 10.0;
-        double larghezza = 8.0;
+        double lunghezza = 8.4;
+        double larghezza = 6.2;
         double altezza = 3.0;
 
         double volume = lunghezza * larghezza * altezza;
         double superficie = lunghezza * larghezza;
         double perimetro = 2 * (lunghezza + larghezza);
-        double persone = superficie / 1.8; 
+        int persone = (int) (superficie / 1.8);
 
-        System.out.println("Volume dell'aula: " + volume +" m³");
-        System.out.println("Superficie dell'aula: " + superficie +" m²");
-        System.out.println("Perimetro dell'aula: " + perimetro +" m");
-        System.out.println("Numero di persone che possono stare nell'aula: " + persone);
+        System.out.printf("Volume dell'aula: %.2f m³%n", volume);
+        System.out.printf("Superficie dell'aula: %.2f%n", superficie);
+        System.out.printf("Perimetro dell'aula: %.2f%n", perimetro);
+        System.out.printf("Numero di persone che possono stare nell'aula: %d%n", persone);
 
     }
 }
